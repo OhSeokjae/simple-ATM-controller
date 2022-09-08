@@ -21,4 +21,4 @@ Based on your work, another engineer should be able to implement the user interf
 You can simplify some complex real world problems if you think it's not worth illustrating in the project.
 
 ## Context Diagram
-simple_atm-context diagram.drawio
+![simple_atm-context diagram drawio](https://user-images.githubusercontent.com/34128826/189163600-d451fb59-e6b8-4a67-8564-6c73b8210962.png)
