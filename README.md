@@ -10,10 +10,9 @@ For simplification, there are only 1 dollar bills in this world, no cents. **Thu
 
 Your code doesn't need to integrate with a real bank system, **but keep in mind that we may want to integrate it with a real bank system in the future.**
 It doesn't have to integrate with a real cash bin in the ATM, **but keep in mind that we'd want to integrate with that in the future.**
-And even if we integrate it with them, **we'd like to test our code. **
+And even if we integrate it with them, **we'd like to test our code.**
 
-Implementing bank integration and ATM hardware like cash bin and card reader is not a scope of this task, **but testing the controller part (not including bank system, cash bin etc) is within the scope.
-**
+Implementing bank integration and ATM hardware like cash bin and card reader is not a scope of this task, **but testing the controller part (not including bank system, cash bin etc) is within the scope.**
 
 A bank API wouldn't give the ATM the PIN number, **but it can tell you if the PIN number is correct or not.**
 
