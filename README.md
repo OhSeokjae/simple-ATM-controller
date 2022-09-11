@@ -33,53 +33,18 @@ User
 - see current balance of accout and history of account(deposit / withdraw)
 
 ## Code Structure
-/model
-    Account.java
-        accountId : String
-        accountName : String
-        balance : int
-    Card.java
-        cardNumber : int
-        cardName : String
-        expiredDate : int
-        userId : String
-        authToken : String
-    Deposit.java
-        depositId : String
-        accountId : String
-        depositTime : Date
-    Withdraw.java
-        withdrawId : String
-        accountId : String
-        withdrawTime : Date
-    User.java
-        userId : String
-        userName : String
-/controller
-    AccountController.java
-        List<Account> getAccounts(Card card);
-        int getAccountBalance(int AccountId);
-        List<Deposit> getDeposits(Card card);
-        List<Withdraw> getWithdraws(Card card);
-    CardController.java
-        Card validateCardwithPin(int cardNumber, int pin)
-/database
-    BankDatabase.java
-        getAccountBalanceFromDB(int accountId);
-
-Atm.java
-
-    
-     - view account balance
-     
-     - deposit funds
-
-## Class Diagram
-
-
-
-##  
-
+### Atm.java
+Atm application, tested with this application
+### /controller
+ : application call this controller method as interface
+### /model
+ : models of ATM
+### /service
+ : services of ATM
+### /database
+ : In this toy project, there isnt real bank system(real database). this repository should be replaced after implementing with real banking system and database.
+ repository should be managed with single instance and should be supported multi thread. Thus, it should be designed and developed with singleton pattern and mutex.
+ 
 
 ## Issues of this problem
 1. In korea, card could be linked with only 1 account.
@@ -89,7 +54,3 @@ In korea banking system and ATM user experience, user couldn't meet step3(select
 In this problem, there are 4 steps.
 insert card -> pin -> select account -> see history
 but, generally, in order to see account history, users have to input pin after select account. in the problem the PIN is related with Card. so, I designed pin as card's attribute.
-
-
-
-## 
