@@ -24,7 +24,7 @@ public class AtmController {
         return new CardService().validatePin(cardId, pin);
     }
 
-    //Step3. Show(Get) Account List
+    //Step3. Get Account List
     public List<Account> getAccountList(AuthToken authToken) throws Exception {
         return new AccountService().getAccountList(authToken);
     } 
